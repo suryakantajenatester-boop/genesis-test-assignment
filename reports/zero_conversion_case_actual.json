@@ -1,0 +1,25 @@
+[
+  {
+    "client_id": "test_client_zero_conversion",
+    "total_spend_usd": 600.0,
+    "total_revenue_usd": 0.0,
+    "impression_count": 1,
+    "click_count": 2,
+    "conversion_count": 0,
+    "roas": 0.0,
+    "conversion_rate_pct": 0.0,
+    "budget_usd": 7000.0,
+    "budget_pacing_pct": 0.09,
+    "channel_breakdown": {
+      "meta_ads": {
+        "spend_usd": 600.0,
+        "revenue_usd": 0.0,
+        "impression_count": 1,
+        "click_count": 2,
+        "conversion_count": 0,
+        "roas": 0.0
+      }
+    },
+    "skipped_event_count": 0
+  }
+]

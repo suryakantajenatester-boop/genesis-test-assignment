@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "scenario_id": "invalid_channel_case",
+    "generation_timestamp": "2026-03-23T00:00:00Z",
+    "llm_model_used": "gpt-5.3",
+    "generation_mode": "simulated",
+    "prompt_template_version": "edge-v1.0",
+    "event_count": 3,
+    "client_ids_present": [
+      "test_client_invalid_channel"
+    ],
+    "notes": "Edge case dataset with an invalid channel value to check skipped-event handling."
+  },
+  "events": [
+    {
+      "event_id": "ic_001",
+      "client_id": "test_client_invalid_channel",
+      "campaign_id": "campaign_invalid_channel",
+      "channel": "linkedin_ads",
+      "event_type": "IMPRESSION",
+      "spend_usd": 0,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-14T09:00:00Z",
+      "budget_usd": 7000
+    },
+    {
+      "event_id": "ic_002",
+      "client_id": "test_client_invalid_channel",
+      "campaign_id": "campaign_invalid_channel",
+      "channel": "linkedin_ads",
+      "event_type": "CLICK",
+      "spend_usd": 250,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-14T10:00:00Z",
+      "budget_usd": 7000
+    },
+    {
+      "event_id": "ic_003",
+      "client_id": "test_client_invalid_channel",
+      "campaign_id": "campaign_invalid_channel",
+      "channel": "google_ads",
+      "event_type": "CONVERSION",
+      "spend_usd": 0,
+      "revenue_usd": 900,
+      "timestamp": "2024-03-14T11:00:00Z",
+      "budget_usd": 7000
+    }
+  ]
+}

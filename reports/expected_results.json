@@ -1,0 +1,20 @@
+[
+  {
+    "client_id": "acme_corp",
+    "expected_from_scenario": {
+      "total_spend_usd": 8200,
+      "budget_usd": 10000,
+      "budget_pacing_pct": 0.82,
+      "total_impressions": 45000,
+      "total_clicks": 1800,
+      "total_conversions": 72,
+      "avg_revenue_per_conversion_usd": 180,
+      "total_revenue_usd": 12960,
+      "google_spend_share_approx_pct": 70
+    },
+    "notes": [
+      "This file stores expected business results from the scenario text, not the engine's row-count interpretation.",
+      "The engine output can be compared against these values to identify KPI logic mismatches."
+    ]
+  }
+]

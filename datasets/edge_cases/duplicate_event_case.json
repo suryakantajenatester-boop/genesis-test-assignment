@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "scenario_id": "duplicate_event_case",
+    "generation_timestamp": "2026-03-23T00:00:00Z",
+    "llm_model_used": "gpt-5.3",
+    "generation_mode": "simulated",
+    "prompt_template_version": "edge-v1.0",
+    "event_count": 4,
+    "client_ids_present": [
+      "test_client_duplicate"
+    ],
+    "notes": "Edge case dataset with duplicate event_id values to test deduplication handling."
+  },
+  "events": [
+    {
+      "event_id": "dup_001",
+      "client_id": "test_client_duplicate",
+      "campaign_id": "campaign_duplicate",
+      "channel": "google_ads",
+      "event_type": "IMPRESSION",
+      "spend_usd": 0,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-16T09:00:00Z",
+      "budget_usd": 6000
+    },
+    {
+      "event_id": "dup_002",
+      "client_id": "test_client_duplicate",
+      "campaign_id": "campaign_duplicate",
+      "channel": "google_ads",
+      "event_type": "CLICK",
+      "spend_usd": 300,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-16T10:00:00Z",
+      "budget_usd": 6000
+    },
+    {
+      "event_id": "dup_002",
+      "client_id": "test_client_duplicate",
+      "campaign_id": "campaign_duplicate",
+      "channel": "google_ads",
+      "event_type": "CLICK",
+      "spend_usd": 300,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-16T10:05:00Z",
+      "budget_usd": 6000
+    },
+    {
+      "event_id": "dup_003",
+      "client_id": "test_client_duplicate",
+      "campaign_id": "campaign_duplicate",
+      "channel": "google_ads",
+      "event_type": "CONVERSION",
+      "spend_usd": 0,
+      "revenue_usd": 1200,
+      "timestamp": "2024-03-16T11:00:00Z",
+      "budget_usd": 6000
+    }
+  ]
+}

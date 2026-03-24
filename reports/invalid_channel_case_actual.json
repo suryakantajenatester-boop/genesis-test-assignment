@@ -1,0 +1,33 @@
+[
+  {
+    "client_id": "test_client_invalid_channel",
+    "total_spend_usd": 250.0,
+    "total_revenue_usd": 900.0,
+    "impression_count": 1,
+    "click_count": 1,
+    "conversion_count": 1,
+    "roas": 3.6,
+    "conversion_rate_pct": 100.0,
+    "budget_usd": 7000.0,
+    "budget_pacing_pct": 0.04,
+    "channel_breakdown": {
+      "linkedin_ads": {
+        "spend_usd": 250.0,
+        "revenue_usd": 0.0,
+        "impression_count": 1,
+        "click_count": 1,
+        "conversion_count": 0,
+        "roas": 0.0
+      },
+      "google_ads": {
+        "spend_usd": 0.0,
+        "revenue_usd": 900.0,
+        "impression_count": 0,
+        "click_count": 0,
+        "conversion_count": 1,
+        "roas": 0.0
+      }
+    },
+    "skipped_event_count": 0
+  }
+]

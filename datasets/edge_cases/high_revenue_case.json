@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "scenario_id": "high_revenue_case",
+    "generation_timestamp": "2026-03-23T00:00:00Z",
+    "llm_model_used": "gpt-5.3",
+    "generation_mode": "simulated",
+    "prompt_template_version": "edge-v1.0",
+    "event_count": 3,
+    "client_ids_present": [
+      "test_client_high_revenue"
+    ],
+    "notes": "Edge case dataset where revenue is unusually high compared to spend."
+  },
+  "events": [
+    {
+      "event_id": "hr_001",
+      "client_id": "test_client_high_revenue",
+      "campaign_id": "campaign_high_revenue",
+      "channel": "google_ads",
+      "event_type": "IMPRESSION",
+      "spend_usd": 0,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-12T09:00:00Z",
+      "budget_usd": 1000
+    },
+    {
+      "event_id": "hr_002",
+      "client_id": "test_client_high_revenue",
+      "campaign_id": "campaign_high_revenue",
+      "channel": "google_ads",
+      "event_type": "CLICK",
+      "spend_usd": 100,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-12T10:00:00Z",
+      "budget_usd": 1000
+    },
+    {
+      "event_id": "hr_003",
+      "client_id": "test_client_high_revenue",
+      "campaign_id": "campaign_high_revenue",
+      "channel": "google_ads",
+      "event_type": "CONVERSION",
+      "spend_usd": 0,
+      "revenue_usd": 5000,
+      "timestamp": "2024-03-12T11:00:00Z",
+      "budget_usd": 1000
+    }
+  ]
+}

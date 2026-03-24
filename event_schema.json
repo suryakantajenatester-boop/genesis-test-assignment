@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CampaignEventDataset",
+  "description": "Schema for a Genesis Group campaign event dataset. Accepted by campaign_engine.py.",
+  "oneOf": [
+    {
+      "description": "Wrapped format: object with events key",
+      "type": "object",
+      "required": ["events"],
+      "properties": {
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "scenario_id":          { "type": "string" },
+            "generation_timestamp": { "type": "string", "format": "date-time" },
+            "llm_model_used":       { "type": "string" },
+            "generation_mode":      { "type": "string", "enum": ["api", "simulated"] },
+            "prompt_template_version": { "type": "string" },
+            "event_count":          { "type": "integer", "minimum": 1 },
+            "client_ids_present":   { "type": "array", "items": { "type": "string" } },
+            "notes":                { "type": "string" }
+          }
+        },
+        "events": {
+          "$ref": "#/definitions/eventList"
+        }
+      }
+    },
+    {
+      "description": "Bare list format",
+      "$ref": "#/definitions/eventList"
+    }
+  ],
+  "definitions": {
+    "eventList": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/event" }
+    },
+    "event": {
+      "type": "object",
+      "required": [
+        "event_id",
+        "client_id",
+        "campaign_id",
+        "channel",
+        "event_type",
+        "spend_usd",
+        "revenue_usd",
+        "timestamp",
+        "budget_usd"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier for this event"
+        },
+        "client_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Client account identifier"
+        },
+        "campaign_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Campaign identifier"
+        },
+        "channel": {
+          "type": "string",
+          "enum": ["google_ads", "meta_ads"],
+          "description": "Ad channel that produced the event"
+        },
+        "event_type": {
+          "type": "string",
+          "enum": ["IMPRESSION", "CLICK", "CONVERSION"],
+          "description": "Type of campaign interaction"
+        },
+        "spend_usd": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Ad spend attributed to this event in USD"
+        },
+        "revenue_usd": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Revenue attributed to this event in USD (non-zero for CONVERSION events)"
+        },
+        "timestamp": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+          "description": "ISO 8601 UTC timestamp"
+        },
+        "budget_usd": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Monthly budget for this client in USD (same value on all events for a given client)"
+        }
+      }
+    }
+  }
+}

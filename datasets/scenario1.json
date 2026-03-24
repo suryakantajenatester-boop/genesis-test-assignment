@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "scenario_id": "acme_corp_march_2024",
+    "generation_timestamp": "2026-03-23T00:00:00Z",
+    "llm_model_used": "gpt-5.3",
+    "generation_mode": "simulated",
+    "prompt_template_version": "v3.0",
+    "event_count": 12,
+    "client_ids_present": [
+      "acme_corp"
+    ],
+    "notes": "Represents aggregated event buckets for a March 2024 scenario with 45000 impressions, 1800 clicks, and 72 conversions."
+  },
+  "events": [
+    {
+      "event_id": "evt_0001",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "google_ads",
+      "event_type": "IMPRESSION",
+      "spend_usd": 0,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-01T09:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0002",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "meta_ads",
+      "event_type": "IMPRESSION",
+      "spend_usd": 0,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-08T10:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0003",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "google_ads",
+      "event_type": "IMPRESSION",
+      "spend_usd": 0,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-15T11:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0004",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "meta_ads",
+      "event_type": "IMPRESSION",
+      "spend_usd": 0,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-22T12:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0005",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "google_ads",
+      "event_type": "CLICK",
+      "spend_usd": 2000,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-04T13:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0006",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "google_ads",
+      "event_type": "CLICK",
+      "spend_usd": 3740,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-11T14:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0007",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "meta_ads",
+      "event_type": "CLICK",
+      "spend_usd": 1200,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-18T15:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0008",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "meta_ads",
+      "event_type": "CLICK",
+      "spend_usd": 1260,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-25T16:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0009",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "google_ads",
+      "event_type": "CONVERSION",
+      "spend_usd": 0,
+      "revenue_usd": 3240,
+      "timestamp": "2024-03-06T17:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0010",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "google_ads",
+      "event_type": "CONVERSION",
+      "spend_usd": 0,
+      "revenue_usd": 3600,
+      "timestamp": "2024-03-13T18:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0011",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "meta_ads",
+      "event_type": "CONVERSION",
+      "spend_usd": 0,
+      "revenue_usd": 2880,
+      "timestamp": "2024-03-20T19:00:00Z",
+      "budget_usd": 10000
+    },
+    {
+      "event_id": "evt_0012",
+      "client_id": "acme_corp",
+      "campaign_id": "acme_march_2024",
+      "channel": "meta_ads",
+      "event_type": "CONVERSION",
+      "spend_usd": 0,
+      "revenue_usd": 3240,
+      "timestamp": "2024-03-29T20:00:00Z",
+      "budget_usd": 10000
+    }
+  ]
+}

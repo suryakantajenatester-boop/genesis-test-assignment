@@ -1,0 +1,21 @@
+# Genesis QA Assignment — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# LLM API clients — install whichever you have access to
+openai>=1.30.0          # for OpenAI / GPT-4o
+anthropic>=0.25.0       # for Claude
+
+# Simulation mode (no API key needed)
+# No extra dependencies — uses only stdlib json + pathlib
+
+# Data handling
+pandas>=2.2.0           # useful for dataset manipulation and validation
+jsonschema>=4.22.0      # JSON schema validation for generated datasets
+
+# Testing
+pytest>=8.2.0
+pytest-cov>=5.0.0
+
+# Optional: for the LLM-assisted delta explanation in Task B
+# (the requests library works fine as a lightweight alternative to the SDKs)
+requests>=2.31.0

@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "scenario_id": "zero_conversion_case",
+    "generation_timestamp": "2026-03-23T00:00:00Z",
+    "llm_model_used": "gpt-5.3",
+    "generation_mode": "simulated",
+    "prompt_template_version": "edge-v1.0",
+    "event_count": 3,
+    "client_ids_present": [
+      "test_client_zero_conversion"
+    ],
+    "notes": "Edge case dataset where there are impressions and clicks but no conversion events."
+  },
+  "events": [
+    {
+      "event_id": "zc_001",
+      "client_id": "test_client_zero_conversion",
+      "campaign_id": "campaign_zero_conversion",
+      "channel": "meta_ads",
+      "event_type": "IMPRESSION",
+      "spend_usd": 0,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-10T09:00:00Z",
+      "budget_usd": 7000
+    },
+    {
+      "event_id": "zc_002",
+      "client_id": "test_client_zero_conversion",
+      "campaign_id": "campaign_zero_conversion",
+      "channel": "meta_ads",
+      "event_type": "CLICK",
+      "spend_usd": 250,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-10T10:00:00Z",
+      "budget_usd": 7000
+    },
+    {
+      "event_id": "zc_003",
+      "client_id": "test_client_zero_conversion",
+      "campaign_id": "campaign_zero_conversion",
+      "channel": "meta_ads",
+      "event_type": "CLICK",
+      "spend_usd": 350,
+      "revenue_usd": 0,
+      "timestamp": "2024-03-10T11:00:00Z",
+      "budget_usd": 7000
+    }
+  ]
+}

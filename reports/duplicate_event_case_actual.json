@@ -1,0 +1,25 @@
+[
+  {
+    "client_id": "test_client_duplicate",
+    "total_spend_usd": 600.0,
+    "total_revenue_usd": 1200.0,
+    "impression_count": 1,
+    "click_count": 2,
+    "conversion_count": 1,
+    "roas": 2.0,
+    "conversion_rate_pct": 100.0,
+    "budget_usd": 6000.0,
+    "budget_pacing_pct": 0.1,
+    "channel_breakdown": {
+      "google_ads": {
+        "spend_usd": 600.0,
+        "revenue_usd": 1200.0,
+        "impression_count": 1,
+        "click_count": 2,
+        "conversion_count": 1,
+        "roas": 2.0
+      }
+    },
+    "skipped_event_count": 0
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "client_id": "acme_corp",
+    "total_spend_usd": 8200.0,
+    "total_revenue_usd": 12960.0,
+    "impression_count": 4,
+    "click_count": 4,
+    "conversion_count": 4,
+    "roas": 1.5805,
+    "conversion_rate_pct": 100.0,
+    "budget_usd": 10000.0,
+    "budget_pacing_pct": 0.82,
+    "channel_breakdown": {
+      "google_ads": {
+        "spend_usd": 5740.0,
+        "revenue_usd": 6840.0,
+        "impression_count": 2,
+        "click_count": 2,
+        "conversion_count": 2,
+        "roas": 1.1916
+      },
+      "meta_ads": {
+        "spend_usd": 2460.0,
+        "revenue_usd": 6120.0,
+        "impression_count": 2,
+        "click_count": 2,
+        "conversion_count": 2,
+        "roas": 2.4878
+      }
+    },
+    "skipped_event_count": 0
+  }
+]
